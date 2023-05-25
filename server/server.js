@@ -7,7 +7,7 @@ port=process.env.PORT || 80;
 
 dotenv.config();
 const configuration =new Configuration({
-    apiKey:process.env.OPENAI_API_KEY,
+    apiKey:"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";
 });
 console.log(process.env.OPENAI_API_KEY)
 const openai=new OpenAIApi(configuration);
