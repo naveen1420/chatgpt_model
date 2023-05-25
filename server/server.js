@@ -7,7 +7,7 @@ port=process.env.PORT || 80;
 
 dotenv.config();
 const configuration =new Configuration({
-    apiKey:"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";
+    apiKey:process.env.OPENAI_API_KEY,
 });
 console.log(process.env.OPENAI_API_KEY)
 const openai=new OpenAIApi(configuration);
@@ -40,7 +40,7 @@ app.post('/',async(req,res)=>{
     }
     catch(error){
         console.log(error);
-        res.status(500).send("not done")   
+        res.status(500).send({error})   
     }
 })
 app.listen(port);
