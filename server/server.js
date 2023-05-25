@@ -40,7 +40,7 @@ app.post('/',async(req,res)=>{
     }
     catch(error){
         console.log(error);
-        res.status(500).send({process.env.OPENAI_API_KEY})   
+        res.status(500).send({error})   
     }
 })
 app.listen(port);
