@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AIBOT</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+   
+    <section>
+        <div>
+            <form>
+            <h1 style="display: block;">Ask Any Question</h1>
+            <textarea id="prompt-id" name="prompt" rows="5" cols="100" placeholder="Enter the question here" style="position: relative;"></textarea>
+            <div class="extra-buttons">
+            <button id="generated" class="btn">SUBMIT</button>
+            </div>
+        </form>
+
+        </div>
+        <div class="containervg">
+            <p class="answer"   aria-placeholder="your answer will appear here"></p>
+            <!--<i id="copy-icon" class="fas fa-copy"> </i>-->
+         </div>
+            <div class="btion">
+                <button id="reset" class="btn">RESET</button>
+                <button id="copy-btn" class="btn" >COPY</button>    
+                <button id="save-btn" class="btn">SAVE</button>
+                <button id="show-btn" class="btn">SAVED ANSWERS</button>
+            </div>
+            
+            <div class="chathide">
+            
+            <div id="saved-questions"></div>
+
+            <button id="delete-btn" class="btn">DELETE CHATS</button>
+            </div>
+        </section>
+        <!-- alert type message -->
+        <div id="alert" class="alert">
+            <span id="alert-message"></span>
+          </div>
+    
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
