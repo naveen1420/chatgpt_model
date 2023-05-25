@@ -2,6 +2,8 @@ import express from 'express';
 import * as dotenv from 'dotenv';
 import cors from 'cors'
 import {Configuration,OpenAIApi} from 'openai';
+var port;
+port=process.env.PORT || 80;
 
 dotenv.config();
 const configuration =new Configuration({
@@ -38,7 +40,7 @@ app.post('/',async(req,res)=>{
     }
     catch(error){
         console.log(error);
-        res.status(500).send({error})   
+        res.status(500).send("not done")   
     }
 })
-app.listen(5000,()=>console.log('server is running on port http://localhost:5000'));
+app.listen(port);

@@ -55,7 +55,7 @@ generateButton.addEventListener('click', async (event) => {
     //abortController = new AbortController();
     //const signal = abortController.signal;
 
-    const response = await fetch('http://localhost:5000/', {
+    const response = await fetch('https://askquestion-8rmz.onrender.com/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
