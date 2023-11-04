@@ -43,4 +43,6 @@ app.post('/',async(req,res)=>{
         res.status(500).send({error})   
     }
 })
-app.listen(port);
+app.listen(port, () => {
+    console.log(`Server listening at http://localhost:${port}`)
+})
